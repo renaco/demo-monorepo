@@ -9,8 +9,9 @@
   "scripts": {
     "client": "yarn workspace client start",
     "server": "yarn workspace server start",
+    "library": "yarn workspace library storybook",
     "lerna" : "npx lerna bootstrap",
-    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\" \"yarn library\"",
     "test": "lerna run test"
   },
   "workspaces": [
