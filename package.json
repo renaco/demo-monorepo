@@ -10,7 +10,7 @@
     "client": "yarn workspace client start",
     "server": "yarn workspace server start",
     "library": "yarn workspace library storybook",
-    "lerna" : "npx lerna bootstrap",
+    "lerna": "npx lerna bootstrap",
     "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\" \"yarn library\"",
     "test": "lerna run test"
   },
@@ -18,7 +18,8 @@
     "packages/*"
   ],
   "dependencies": {
-    "concurrently": "^5.3.0"
+    "concurrently": "^5.3.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
